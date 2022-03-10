@@ -1,0 +1,45 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site v2'
+
+theme = "LoveIt"
+
+[params]
+   #LoveIt theme version
+   version = "0.2.X"
+
+[menu]
+   [[menu.main]]
+     identifier = "posts"
+     # You can add other information like icon before the name (HTML format allowed)
+     pre = ""
+     # You can add other information after the name (HTML format allowed), such as an icon
+     post = ""
+     name = "article"
+     url = "/posts/"
+     # The title that will be displayed when you hover over this menu link
+     title = ""
+     weight = 1
+   [[menu.main]]
+     identifier = "tags"
+     pre = ""
+     post = ""
+     name = "label"
+     url = "/tags/"
+     title = ""
+     weight = 2
+   [[menu.main]]
+     identifier = "categories"
+     pre = ""
+     post = ""
+     name = "category"
+     url = "/categories/"
+     title = ""
+     weight = 3
+
+# Hugo parses the configuration of the document
+[markup]
+   # Syntax highlighting settings (https://gohugo.io/content-management/syntax-highlighting)
+   [markup.highlight]
+     # false is a necessary setting (https://github.com/dillonzq/LoveIt/issues/158)
+     noClasses = false
